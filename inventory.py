@@ -1,3 +1,5 @@
+#issue 1
+
 from tabulate import tabulate
 
 class Shoes:
