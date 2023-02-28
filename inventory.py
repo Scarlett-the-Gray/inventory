@@ -51,23 +51,21 @@ with open("inventory.txt", "r") as inventory_read, open("inventory.txt", "a+") a
             print("\n       Error message: File not found\n")
             print(error)
 
-    def capture_shoes():
-        try:
-            new_country = input("Enter country name: \n")
-            new_code = input("Enter code of product: \n")
-            new_product = input("Enter name of product:\n")
-            new_cost = int(input("Enter cost of product.  Do not include currency code.: \n"))
-            new_quantity = int(input("Enter quantity of product received.:\n"))
+   # capture_shoes function
+def capture_shoes():
+    try:
+        # existing code
+    except Exception as e:
+        print("\n       Error occurred while capturing new stock:")
+        print(e)
 
-            new_shoe = Shoes(new_country, new_code, new_product, new_cost, new_quantity)
-            shoe_obj.append(new_shoe)
-
-            inventory_write.write(f'\n{new_country},{new_code},{new_product},{new_cost},{new_quantity}')
-            print("\n       New stock captured successfully.\n")
-
-        except FileNotFoundError as error:
-            print("\n       Error message: File not found\n")
-            print(error)
+# view_all function
+def view_all():
+    try:
+        # existing code
+    except Exception as e:
+        print("\n       Error occurred while viewing inventory:")
+        print(e)
 
     def view_all():
         try:
